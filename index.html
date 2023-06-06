@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="profile__card">
+        <div class="profile__cover">
+          <header>
+            <picture>
+              <img src="/images/bg-pattern-card.svg" alt="" />
+            </picture>
+          </header>
+        </div>
+        <div class="profile__info">
+          <article>
+            <picture class="profile__picture"
+              ><img class="picture" src="/images/image-victor.jpg" alt=""
+            /></picture>
+            <h1>Victor Crest <span class="age">26</span></h1>
+            <p class="city">London</p>
+          </article>
+          <div class="profile__stats">
+            <div class="stats">
+              80K <span class="stats__title">Followers</span>
+            </div>
+            <div class="stats">
+              803K <span class="stats__title">Likes</span>
+            </div>
+            <div class="stats">
+              1.4K <span class="stats__title">Photos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

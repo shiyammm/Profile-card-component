@@ -1,0 +1,155 @@
+:root {
+  /* ### Primary */
+
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /* ### Neutral */
+
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: initial;
+  }
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--Dark-cyan);
+  background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-position: right 50vw bottom 44vh, left 50vw top 44vh;
+  background-repeat: no-repeat, no-repeat;
+  color: var(--Very-dark-desaturated-blue);
+}
+.profile__card {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  gap: 2rem;
+  box-shadow: 0px 34px 72px -36px rgba(41, 41, 41, 1);
+}
+.profile__picture {
+  position: absolute;
+  left: 50%;
+  top: 39%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+}
+.profile__info {
+  padding: 0.8rem;
+}
+article {
+  text-align: center;
+  line-height: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+h1 {
+  font-size: 1.3rem;
+}
+
+.picture {
+  border-radius: 100%;
+  border: 0.4rem solid white;
+}
+
+.age {
+  color: var(--Dark-grayish-blue);
+  font-weight: 500;
+}
+.city {
+  color: var(--Dark-grayish-blue);
+  font-size: 0.8rem;
+}
+
+.profile__stats {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid rgb(229, 229, 229);
+  padding-right: 1rem;
+}
+.stats {
+  padding: 1rem 1.7rem;
+  font-weight: 700;
+  color: var(--Very-dark-desaturated-blue);
+}
+.stats__title {
+  display: block;
+  font-weight: 500;
+  color: var(--Dark-grayish-blue);
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+}
+@media (max-width: 375px) {
+  body {
+    background-position: right 40vw bottom 44vh, left 40vw top 44vh;
+  }
+}
